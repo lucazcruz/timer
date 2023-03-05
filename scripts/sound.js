@@ -1,8 +1,8 @@
 export default function Sound() {
 
-  const buttonPress = new Audio('../audios/button-press.wav')
-  const timerEnd = new Audio('../audios/timer-end.mp3')
-  const background = new Audio('../audios/background.mp3')
+  const buttonPress = new Audio('https://github.com/lucazcruz/timer/blob/main/assets/music/button-press.wav?raw=true')
+  const timerEnd = new Audio('https://github.com/lucazcruz/timer/blob/main/assets/music/timer-end.mp3?raw=true')
+  const background = new Audio('https://github.com/lucazcruz/timer/blob/main/assets/music/background.mp3?raw=true')
   
   background.loop = true
 
