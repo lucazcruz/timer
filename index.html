@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Timer | Focus Pomodoro</title>
+</head>
+<body>
+  <div id="main">
+    <div class="display-timer">
+      <span class="minutes">02</span>
+      <span>:</span>
+      <span class="seconds">05</span>
+    </div>
+    <div class="controlls">
+      <button class="play-button">
+        <img src="./assets/play.svg" alt="play image">
+      </button>
+      <button class="pause-button hide">
+        <img src="./assets/pause.svg" alt="pause image">
+      </button>
+      <button class="stop-button hide">
+        <img src="./assets/stop.svg" alt="stop image">
+      </button>
+      <button class="setTimer-button">
+        <img src="./assets/set-timer.svg" alt="set-timer image">
+      </button>
+    </div>
+  </div>
+  <div class="sound">
+    <button class="sound-button-on hide">
+      <img src="./assets/sound-on.svg" alt="sound-on image">
+    </button>
+    <button class="sound-button-off">
+      <img src="./assets/sound-off.svg" alt="sound-off image">
+    </button>
+  </div>
+
+  <script type="module" src="./script/script.js"></script>
+</body>
+</html>
