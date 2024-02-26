@@ -10,7 +10,9 @@ import {
 import Controls from "./controls.js";
 import Events from "./events.js";
 import Timer from "./timer.js";
+import Sound from "./sound.js";
 
+const sound = Sound();
 
 const controls = Controls({
   playButton, 
@@ -26,5 +28,6 @@ const timer = Timer({
 
 Events({
   controls,
-  timer  
+  timer,
+  sound
 });
