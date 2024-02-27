@@ -23,7 +23,8 @@ const controls = Controls({
 
 const timer = Timer({
   displayMinutes,
-  displaySeconds
+  displaySeconds,
+  sound
 });
 
 Events({

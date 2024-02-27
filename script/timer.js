@@ -1,6 +1,7 @@
 export default function Timer({
   displayMinutes,
-  displaySeconds
+  displaySeconds,
+  sound
 }) {
 
   let interval;
@@ -15,7 +16,10 @@ export default function Timer({
         updateDisplay(--minutes, seconds);
       }
       updateDisplay(minutes, --seconds);
-      if(minutes <= 0 && seconds <= 0) reset();
+      if(minutes <= 0 && seconds <= 0) {
+        reset()
+        sound.endSound.play();
+      };
     }, 1000);
   }
 

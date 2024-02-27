@@ -3,8 +3,9 @@ import {
   pauseButton,
   stopButton,
   setTimerButton,
+  soundOnButton,
+  soundOffButton,
 } from "./elements.js";
-
 
 export default function Events({ controls, timer, sound }) {
   playButton.addEventListener("click", () => {
@@ -30,4 +31,16 @@ export default function Events({ controls, timer, sound }) {
     timer.updateDisplay(minutes);
     sound.pressSound.play();
   })
+
+  soundOffButton.addEventListener('click', () => {
+    soundOnButton.classList.remove("hide");
+    soundOffButton.classList.add("hide");
+    sound.bgSound.play();
+  });
+
+  soundOnButton.addEventListener('click', () => {
+    soundOnButton.classList.add("hide");
+    soundOffButton.classList.remove("hide");
+    sound.bgSound.pause();
+  });
 }
