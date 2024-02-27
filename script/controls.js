@@ -25,6 +25,7 @@ export default function Controls({
 
   function setTimer() {
     const minutes = prompt();
+    if(isNaN(minutes)) return false;
     return minutes;
   }
 

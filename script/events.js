@@ -28,7 +28,7 @@ export default function Events({ controls, timer, sound }) {
   
   setTimerButton.addEventListener("click", () => {
     const minutes = controls.setTimer();
-    timer.updateDisplay(minutes);
+    if(minutes) timer.updateDisplay(minutes);
     sound.pressSound.play();
   })
 
